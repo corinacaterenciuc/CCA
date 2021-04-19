@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Search by keyword story","Searching by ambiguious keyword should display the disambiguation page","PENDING","2021-04-19T13:42:51.231+03:00","0.0","0.01"
+"Search by keyword story","Searching by keyword apple should display the corresponding article","SUCCESS","2021-04-19T13:42:51.251+03:00","0.0","9.17"
+"Search by keyword story","Searching by keyword banana should display the corresponding article","SUCCESS","2021-04-19T13:42:41.112+03:00","0.0","9.99"
+"Search by keyword story","Searching by keyword kiwi should display the corresponding article","SUCCESS","2021-04-19T13:42:32.704+03:00","0.0","8.34"
+"Search by keyword story","Searching by keyword pineapple should display the corresponding article","SUCCESS","2021-04-19T13:42:21.811+03:00","0.0","10.65"
