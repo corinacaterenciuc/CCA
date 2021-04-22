@@ -59,4 +59,58 @@ public class SearchByKeywordStory {
     @Pending @Test
     public void searching_by_ambiguious_keyword_should_display_the_disambiguation_page() {
     }
+
+    @Test
+    public void searching_by_keyword_pancakes_should_display_some_results() {
+        // GIVEN
+        anna.is_the_home_pageEmag();
+        // WHEN
+        anna.looks_forEmag("pancakes");
+        // THEN
+        anna.should_see_resultsEmag("18 rezultate pentru:");
+    }
+
+    @Test
+    public void searching_by_keyword_askjbfslg_should_display_some_results() {
+        // GIVEN
+        anna.is_the_home_pageEmag();
+        // WHEN
+        anna.looks_forEmag("askjbfslg");
+        // THEN
+        anna.should_see_resultsEmag("0 rezultate pentru:");
+    }
+
+    @Test
+    public void adding_by_keyword_pancakes_should_display_some_results() {
+        // GIVEN
+        anna.is_the_home_pageEmag();
+        anna.looks_forEmag("pancakes");
+        // WHEN
+        anna.add_productEmag();
+        // THEN
+        anna.should_see_results_AddEmag("Cosul meu");
+    }
+
+    // does ot work yet :D
+//    @Test
+//    public void adding_by_keyword_askjbfslg_should_display_some_results() {
+//        // GIVEN
+//        anna.is_the_home_pageEmag();
+//        anna.looks_forEmag("Delight Your Customers: 7 Simple Ways to Raise Your Customer Service from");
+//        // WHEN
+//        anna.add_productEmag();
+//        // THEN
+//        anna.should_see_results_AddEmag("Favorite");
+//    }
+
+//    @Test
+//    public void filterring_by_keyword_sub50_should_display_some_results() {
+//        // GIVEN
+//        anna.is_the_home_pageEmag();
+//        anna.looks_forEmag("pancakes");
+//        // WHEN
+//        anna.enters_filterEmag("Sub 50");
+//        // THEN
+//        anna.should_see_results_AddEmag("5 rezultate pentru:");
+//    }
 }

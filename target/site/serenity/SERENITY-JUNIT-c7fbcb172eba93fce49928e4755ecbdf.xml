@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Lab5SerenityJUnit.features.search.SearchByKeywordStory" skipped="0" tests="1" time="10.67" timestamp="2021-04-112 06:38:41"><testcase classname="Lab5SerenityJUnit.features.search.SearchByKeywordStory" name="Searching by keyword pancakes should display some results"/></testsuite>
