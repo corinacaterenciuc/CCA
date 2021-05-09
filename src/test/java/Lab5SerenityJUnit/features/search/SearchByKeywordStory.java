@@ -60,6 +60,7 @@ public class SearchByKeywordStory {
     public void searching_by_ambiguious_keyword_should_display_the_disambiguation_page() {
     }
 
+    //Testing search functionality - valid search
     @Test
     public void searching_by_keyword_pancakes_should_display_some_results() {
         // GIVEN
@@ -67,9 +68,10 @@ public class SearchByKeywordStory {
         // WHEN
         anna.looks_forEmag("pancakes");
         // THEN
-        anna.should_see_resultsEmag("18 rezultate pentru:");
+        anna.should_see_resultsEmag("22 de rezultate pentru:");
     }
 
+    //Testing search functionality - invalid search
     @Test
     public void searching_by_keyword_askjbfslg_should_display_some_results() {
         // GIVEN
@@ -80,6 +82,7 @@ public class SearchByKeywordStory {
         anna.should_see_resultsEmag("0 rezultate pentru:");
     }
 
+    //Testing add functionality - valid add
     @Test
     public void adding_by_keyword_pancakes_should_display_some_results() {
         // GIVEN
@@ -113,4 +116,5 @@ public class SearchByKeywordStory {
 //        // THEN
 //        anna.should_see_results_AddEmag("5 rezultate pentru:");
 //    }
+
 }

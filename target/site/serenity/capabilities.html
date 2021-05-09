@@ -35,11 +35,11 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 4],
+                ['Passing', 8],
                 ['Pending', 1],
                 ['Ignored', 0],
                 ['Failing', 0],
-                ['Errors',  0],
+                ['Errors',  1],
                 ['Compromised',  0],
                 ['Untested',  0],
             ]
@@ -68,11 +68,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '4 requirements tested successfully'},
+                {label: '8 requirements tested successfully'},
                 {label: '1 requirements pending'},
                 {label: '0} requirements skipped'},
                 {label: '0} requirements with failures'},
-                {label: '0} requirements with errors'},
+                {label: '1} requirements with errors'},
                 {label: '0} requirements compromised'},
                 {label: '0} requirements untested'},
             ]
@@ -160,7 +160,7 @@
             <a href="#"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-04-2021 13:42</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-04-2021 19:53</span>
     <br style="clear:left"/>
 </div>
 
@@ -192,9 +192,9 @@
 
                                 <tr>
                                     <td class="summary-leading-column"><a href="#test-results-table">Acceptance Criteria (tests)</a></td>
-                                    <td>5</td>
-                                    <td>4</td>
-                                    <td>0</td>
+                                    <td>10</td>
+                                    <td>8</td>
+                                    <td>1</td>
                                     <td>1</td>
                                     <td>0</td>
                                     <td></td>
@@ -223,10 +223,10 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>5</td>
-            <td>4 (80%)</td>
-            <td>0 (0%)</td>
-            <td>1 (20%)</td>
+            <td>10</td>
+            <td>8 (80%)</td>
+            <td>1 (10%)</td>
+            <td>1 (10%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
@@ -239,15 +239,15 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>5</td>
-            <td>4 (80%)</td>
-            <td>0 (0%)</td>
-            <td>1 (20%)</td>
+            <td>10</td>
+            <td>8 (80%)</td>
+            <td>1 (0%)</td>
+            <td>1 (10%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">38 seconds</td>
+                <td colspan="5">1 minutes 55 seconds</td>
         </tr>
         </body>
     </table>
@@ -275,6 +275,66 @@
                         </thead>
                         <tbody>
 
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                                    
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
+                                    <div class="ellipsis">
+
+                                        <a href="a9e3a43df02ccc0b593f42d1ce3e80c3.html" class="ellipsis" title="No such element exception: no such el...">
+                                            Adding By Keyword Askjbfslg Should Display Some Results
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">6</td>
+
+
+                                <td class="lightgreentext">13.4</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="5207cdd5f90790517bc872e30a4ab8ac.html" class="ellipsis" title="">
+                                            Adding By Keyword Pancakes Should Display Some Results
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">6</td>
+
+
+                                <td class="lightgreentext">21.86</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="f94375dc9467eede889709d0198cd8b4.html" class="ellipsis" title="">
+                                            Filterring By Keyword Sub50 Should Display Some Results
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">6</td>
+
+
+                                <td class="lightgreentext">13.1</td>
+                            </tr>
+
                             <tr class="test-PENDING">
                                 <td><span class="summary-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
                                     
@@ -292,7 +352,7 @@
                                 <td class="lightgreentext">0</td>
 
 
-                                <td class="lightgreentext">0.01</td>
+                                <td class="lightgreentext">0</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -312,7 +372,27 @@
                                 <td class="lightgreentext">5</td>
 
 
-                                <td class="lightgreentext">9.17</td>
+                                <td class="lightgreentext">8.18</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="4a7538fae9e241f9f029800309dbec73.html" class="ellipsis" title="">
+                                            Searching By Keyword Askjbfslg Should Display Some Results
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">5</td>
+
+
+                                <td class="lightgreentext">13.58</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -332,7 +412,7 @@
                                 <td class="lightgreentext">5</td>
 
 
-                                <td class="lightgreentext">9.99</td>
+                                <td class="lightgreentext">8.12</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -352,7 +432,27 @@
                                 <td class="lightgreentext">5</td>
 
 
-                                <td class="lightgreentext">8.34</td>
+                                <td class="lightgreentext">10.14</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="c7fbcb172eba93fce49928e4755ecbdf.html" class="ellipsis" title="">
+                                            Searching By Keyword Pancakes Should Display Some Results
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">5</td>
+
+
+                                <td class="lightgreentext">18.66</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -372,7 +472,7 @@
                                 <td class="lightgreentext">5</td>
 
 
-                                <td class="lightgreentext">10.65</td>
+                                <td class="lightgreentext">8.72</td>
                             </tr>
                         </tbody>
                     </table>
